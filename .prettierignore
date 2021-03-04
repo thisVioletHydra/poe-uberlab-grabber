@@ -1,0 +1,15 @@
+dist/
+node_modules
+node_modules/
+node_modules/**/*
+*.snippet
+.snippet
+*.vue.snippet
+jsconfig.json
+docs
+.nuxt
+__test__
+static
+.vscode
+
+**/Temp/*

@@ -1,0 +1,4 @@
+./server
+.vscode
+__test__
+.eslintrc.js

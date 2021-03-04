@@ -1,0 +1,19 @@
+{
+  "ignore": [".vscode", "dist", "webpack", "node_modules/**/*", ".nuxt/**/*", "static/**/*", "__test__"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "targets": { "node": "14", "esmodules": true },
+        "exclude": ["transform-async-to-generator", "transform-regenerator"]
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "compact": false
+    }
+  },
+  "plugins": [["syntax-dynamic-import"], ["module:fast-async", { "spec": true }]]
+}

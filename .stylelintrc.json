@@ -1,0 +1,33 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "block-closing-brace-empty-line-before": null,
+    "block-closing-brace-newline-after": "never-single-line",
+    "comment-empty-line-before": null,
+    "declaration-colon-space-after": "always-single-line",
+    "declaration-colon-space-before": "never",
+    "function-parentheses-space-inside": null,
+    "indentation": null,
+    "media-feature-colon-space-after": null,
+    "media-feature-colon-space-before": null,
+    "media-feature-range-operator-space-after": "never",
+    "media-feature-range-operator-space-before": "never",
+    "no-empty-source": null,
+    "block-no-empty": null,
+    "no-eol-whitespace": null,
+    "rule-empty-line-before": null,
+    "string-quotes": "single",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["for", "if", "else", "each", "mixin", "custom-media", "define-mixin", "include"]
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["user-drag"]
+      }
+    ]
+  }
+}

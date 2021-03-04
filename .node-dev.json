@@ -1,0 +1,6 @@
+{
+  "clear": true,
+  "respawn": true,
+  "notify": false,
+  "ignore": ["src", "dist/hot*", "node_modules"]
+}
