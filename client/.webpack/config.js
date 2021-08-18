@@ -1,7 +1,7 @@
 const { resolve } = require('path');
 
 const root = process.cwd();
-const dir = resolve(root, 'server');
+const dir = resolve(root, 'main');
 
 /**
  * Path

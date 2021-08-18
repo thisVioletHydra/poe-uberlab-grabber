@@ -24,13 +24,13 @@ const appPoe = async () => {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     await page.goto(config.url);
-    console.log(`[LOG] перешел по ссылке`);
+    console.log(`• перешел по ссылке`);
 
     await page.click(config.target);
-    console.log(`[LOG] кликнул по кнопке`);
+    console.log(`• кликнул по кнопке`);
 
     await page.waitForSelector(config.file);
-    console.log(`[LOG] жду страницу`);
+    console.log(`• жду страницу`);
 
     const getFile: string = await page.evaluate(_path => {
       const myFile: HTMLAnchorElement | null = document.querySelector(_path);
@@ -42,7 +42,7 @@ const appPoe = async () => {
       return result;
     }, config.file);
 
-    console.log(`[LOG] getFile`, `<${typeof getFile}>`, getFile);
+    console.log(`• SUCCESS`);
 
     const openUrl = await page.goto(getFile);
     const saveToBuffer = await openUrl.buffer();
@@ -51,7 +51,7 @@ const appPoe = async () => {
       console.log('создаю папку');
       fs.mkdirSync(config.diskPath);
     }
-    console.log('папка на месте, иду дальше... ');
+    console.log('• папка на месте, иду дальше... ');
     await fsPromises.writeFile(
       config.saveTo({
         path: config.diskPath,
@@ -60,7 +60,7 @@ const appPoe = async () => {
       saveToBuffer
     );
     browser.close();
-    console.log('скачал и закрыл задачу');
+    console.log('• скачал и закрыл задачу');
     return { state: 200 };
   } catch (error) {
     console.log('error', error);

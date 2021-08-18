@@ -1,9 +1,10 @@
 ### how to use
 
-`yarn poe`
-or
-`npm run poe`
+```js
+cd .\client\ && yarn && yarn prod
+```
 
-and
+after
+`yarn poe`
 
 see `download` folder
