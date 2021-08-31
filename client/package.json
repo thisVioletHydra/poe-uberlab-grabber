@@ -1,6 +1,6 @@
 {
   "name": "poe-uberlab-grabber",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "repository": "git@github.com:thisVioletHydra/poe-uberlab-grabber.git",
   "author": "VioletHydra <mrG0bliN.tm@gmail.com>",
@@ -13,7 +13,6 @@
     "line::main": " ____________ 🚀 MAIN 🚀 ____________ ",
     "poe": "node ./main/dist/main.js",
     "go": "node-dev ./main/dist/main.js",
-    "watch": "del .eslintcache && nuxt",
     "server": "webpack --mode development",
     "prod": "webpack --mode production",
     "fix": "eslint ./src/**/*.js --fix",
