@@ -30,9 +30,9 @@ const pluginsArray = [
   new webpack.EnvironmentPlugin({
     NODE_TLS_REJECT_UNAUTHORIZED: '0',
     NODE_ENV: mode,
-    NODE_HOST: '185.79.117.244',
-    NODE_PORT: 4104,
-    NODE_API: 4104,
+    NODE_HOST: 'localhost',
+    NODE_PORT: 4004,
+    NODE_API: 4004,
     DEBUG: false,
   }),
 ];
